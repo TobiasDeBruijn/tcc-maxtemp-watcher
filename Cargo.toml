@@ -1,0 +1,18 @@
+[package]
+name = "tcc-maxtemp-watcher"
+version = "0.1.0"
+edition = "2021"
+authors = ["Tobias de Bruijn <t.debruijn@array21.dev>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/TobiasDeBruijn/tcc-maxtemp-watcher"
+description = "Set a maximum temperature for all TCC heating zones"
+
+[dependencies]
+color-eyre = "0.6.2"
+envy = "0.4.2"
+honeywell-tcc = "0.1.0"
+tokio = { version = "1.32.0", features = ["full"] }
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
+serde = { version = "1.0.188", features = ["derive"] }
